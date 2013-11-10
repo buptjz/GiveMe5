@@ -5,3 +5,9 @@ build
 *.xcuserstate
 
 *.xcuserstate
+
+*.pbxproj
+
+*.xcbkptlist
+
+*.xcuserstate

@@ -31,6 +31,10 @@
     NSLog(@"data is :%@",ret_str);
 }
 
+-(IBAction)refresh:(UIButton *)sender{
+    NSString *url = [NSString stringWithFormat:@"%@score=%d&name=%@",SERVERURL,20,@"wangjizhe"];
+    [self sync_get_request:url];
+}
 -(IBAction)clickNumber:(UIButton *)sender
 {
     current_score = sender.tag;
@@ -53,6 +57,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+//重载shouldAutorotateToInterfaceOrientation:方法，这种方式是可行的。具体如下：
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return ((interfaceOrientation ==UIDeviceOrientationLandscapeLeft)||(interfaceOrientation ==UIDeviceOrientationLandscapeRight));
+}
 
 
 @end

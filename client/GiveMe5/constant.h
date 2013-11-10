@@ -10,7 +10,7 @@
 #define GiveMe5_Header_h
 
 
-#define SERVERURL @"http://127.0.0.1:8000/display/send_score?"
+#define SERVERURL @"http://10.105.55.225:8000/display/send_score?"
 
 //http://127.0.0.1:8000/display/send_score?score=90&name=wjz
 
