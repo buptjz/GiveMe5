@@ -19,4 +19,7 @@
 
 -(IBAction)clickNumber:(UIButton *)sender;
 
+/**同步get请求**/
+-(void)sync_get_request:(NSString *)stringurl;
+
 @end

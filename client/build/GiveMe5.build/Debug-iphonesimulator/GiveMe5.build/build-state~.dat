@@ -1,315 +1,0 @@
-TGiveMe5
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Info.plist GiveMe5/GiveMe5-Info.plist
-cProcessPCH /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.pth GiveMe5/GiveMe5-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.o /MyProject/GiveMe5/GiveMe5/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.o /MyProject/GiveMe5/GiveMe5/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.o /MyProject/GiveMe5/GiveMe5/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5 normal i386
-cGenerateDSYMFile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYM /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5
-cCopyStringsFile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj/InfoPlist.strings GiveMe5/en.lproj/InfoPlist.strings
-cCpResource GiveMe5/Default.png build/Debug-iphonesimulator/GiveMe5.app/Default.png
-cCpResource GiveMe5/Default@2x.png build/Debug-iphonesimulator/GiveMe5.app/Default@2x.png
-cCpResource GiveMe5/Default-568h@2x.png build/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.png
-cCompileXIB /MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib
-cTouch /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
-c000000005239BDC90000000000000110
-t1379515849
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c0000000051A9ADB30000000000228FE0
-t1370074547
-s2265056
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c0000000051A9ADB500000000003DDFA0
-t1370074549
-s4054944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c0000000051A9ADB400000000000015F7
-t1370074548
-s5623
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c0000000051A9ADB90000000000000E8D
-t1370074553
-s3725
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c0000000051A9ADBB0000000000AB6230
-t1370074555
-s11231792
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include/Availability.h
-c0000000051A9ADCA0000000000001B73
-t1370074570
-s7027
-
-N/MyProject/GiveMe5/GiveMe5/AppDelegate.m
-c00000000527EEEA80000000000000977
-t1384050344
-s2423
-
-N/MyProject/GiveMe5/GiveMe5/Default-568h@2x.png
-c00000000515C9E6200000000000048A2
-t1365024354
-s18594
-
-N/MyProject/GiveMe5/GiveMe5/Default.png
-c00000000515C9E62000000000000198C
-t1365024354
-s6540
-
-N/MyProject/GiveMe5/GiveMe5/Default@2x.png
-c00000000515C9E620000000000003EEB
-t1365024354
-s16107
-
-N/MyProject/GiveMe5/GiveMe5/GiveMe5-Prefix.pch
-c00000000527EEEA8000000000000013D
-t1384050344
-s317
-i<Availability.h>
-i<UIKit/UIKit.h>
-i<Foundation/Foundation.h>
-
-N/MyProject/GiveMe5/GiveMe5/ViewController.m
-c00000000527EEEA900000000000001E9
-t1384050345
-s489
-
-N/MyProject/GiveMe5/GiveMe5/en.lproj/InfoPlist.strings
-c00000000527EEEA8000000000000002D
-t1384050344
-s45
-
-N/MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib
-c00000000527EEEA90000000000001489
-t1384050345
-s5257
-
-N/MyProject/GiveMe5/GiveMe5/main.m
-c00000000527EEEA8000000000000014C
-t1384050344
-s332
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYM
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.png
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Default.png
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Default@2x.png
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Info.plist
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/PkgInfo
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj/InfoPlist.strings
-t2
-s0
-
-N/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj/ViewController.nib
-t2
-s0
-
-N/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.o
-t2
-s0
-
-N/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/GiveMe5.LinkFileList
-c00000000527EEEBD0000000000000143
-t1384050365
-s323
-
-N/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.o
-t2
-s0
-
-N/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.o
-t2
-s0
-
-N/var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.pth
-t2
-s0
-
-NGiveMe5/GiveMe5-Info.plist
-c00000000527EEEA800000000000004C8
-t1384050344
-s1224
-
-CBuild AST from /MyProject/GiveMe5/GiveMe5/AppDelegate.m
-r0
-
-CBuild AST from /MyProject/GiveMe5/GiveMe5/ViewController.m
-r0
-
-CBuild AST from /MyProject/GiveMe5/GiveMe5/main.m
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2e1d633d262fb841^f38fbe3d262fb841^---0#1#0#--18"Check dependencies36"3F7B3AA9-2060-40FE-B387-4BB9C59150AF-
-
-CCompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.o /MyProject/GiveMe5/GiveMe5/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s405743174.301655
-e405743174.867891
-r1
-xCompileC
-xbuild/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.o
-x/MyProject/GiveMe5/GiveMe5/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Compile /MyProject/GiveMe5/GiveMe5/AppDelegate.m2f6c4d46262fb841^2e39de46262fb841^---0#0#0#-19%DVTDocumentLocation2@56"file://localhost/MyProject/GiveMe5/GiveMe5/AppDelegate.m0000000000000000^3162"CompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.o GiveMe5/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /MyProject/GiveMe5    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-generated-files.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-own-target-headers.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-all-target-headers.hmap -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-project-headers.hmap -I/MyProject/GiveMe5/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources/i386 -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources -F/MyProject/GiveMe5/build/Debug-iphonesimulator -include /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch -MMD -MT dependencies -MF /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.dia -c /MyProject/GiveMe5/GiveMe5/AppDelegate.m -o /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/AppDelegate.o36"EE6065AC-6CBB-4DDE-8854-9744A80DAE91-
-
-CCompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.o /MyProject/GiveMe5/GiveMe5/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s405743174.301728
-e405743174.863299
-r1
-xCompileC
-xbuild/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.o
-x/MyProject/GiveMe5/GiveMe5/ViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Compile /MyProject/GiveMe5/GiveMe5/ViewController.m419e4d46262fb841^800bde46262fb841^---0#0#0#-19%DVTDocumentLocation2@59"file://localhost/MyProject/GiveMe5/GiveMe5/ViewController.m0000000000000000^3180"CompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.o GiveMe5/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /MyProject/GiveMe5    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-generated-files.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-own-target-headers.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-all-target-headers.hmap -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-project-headers.hmap -I/MyProject/GiveMe5/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources/i386 -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources -F/MyProject/GiveMe5/build/Debug-iphonesimulator -include /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch -MMD -MT dependencies -MF /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.dia -c /MyProject/GiveMe5/GiveMe5/ViewController.m -o /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/ViewController.o36"F083DEAB-AF11-44CF-B8E0-699DE69322D3-
-
-CCompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.o /MyProject/GiveMe5/GiveMe5/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s405743174.301657
-e405743174.863078
-r1
-xCompileC
-xbuild/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.o
-x/MyProject/GiveMe5/GiveMe5/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Compile /MyProject/GiveMe5/GiveMe5/main.mb56c4d46262fb841^baf6dd46262fb841^---0#0#0#-19%DVTDocumentLocation2@49"file://localhost/MyProject/GiveMe5/GiveMe5/main.m0000000000000000^3120"CompileC build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.o GiveMe5/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /MyProject/GiveMe5    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-generated-files.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-own-target-headers.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-all-target-headers.hmap -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-project-headers.hmap -I/MyProject/GiveMe5/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources/i386 -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources -F/MyProject/GiveMe5/build/Debug-iphonesimulator -include /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch -MMD -MT dependencies -MF /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.d --serialize-diagnostics /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.dia -c /MyProject/GiveMe5/GiveMe5/main.m -o /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/main.o36"E4B33C08-F0F9-424D-8184-FEEF7E11737E-
-
-CCompileXIB /MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib
-s405743176.511812
-e405743177.617735
-r1
-xCompileXIB
-x/MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compiling /MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib20248348262fb841^db35e149262fb841^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib0000000000000000^854"CompileXIB GiveMe5/en.lproj/ViewController.xib    cd /MyProject/GiveMe5    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj/ViewController.nib /MyProject/GiveMe5/GiveMe5/en.lproj/ViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"ACB23A51-0E78-4DC7-A066-575BEB976893-
-
-CCopyStringsFile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj/InfoPlist.strings GiveMe5/en.lproj/InfoPlist.strings
-s405743176.506124
-e405743177.880167
-r1
-xCopyStringsFile
-x/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj/InfoPlist.strings
-xGiveMe5/en.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Copy GiveMe5/en.lproj/InfoPlist.strings1cb68148262fb841^3f55e149262fb841^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/MyProject/GiveMe5/GiveMe5/en.lproj/InfoPlist.strings0000000000000000^535"CopyStringsFile build/Debug-iphonesimulator/GiveMe5.app/en.lproj/InfoPlist.strings GiveMe5/en.lproj/InfoPlist.strings    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/en.lproj -- GiveMe5/en.lproj/InfoPlist.strings36"B380E9BE-F2E0-4212-9284-60CACAA4F394-
-
-CCpResource GiveMe5/Default-568h@2x.png build/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.png
-s405743176.507316
-e405743176.512739
-r1
-xCpResource
-xGiveMe5/Default-568h@2x.png
-xbuild/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.pnge7fb8148262fb841^d926e149262fb841^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.png000000000080d041^544"CpResource "GiveMe5/Default-568h@2x.png" "build/Debug-iphonesimulator/GiveMe5.app/Default-568h@2x.png"    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/MyProject/GiveMe5/GiveMe5/Default-568h@2x.png" /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app36"F84D581F-91C8-401E-B463-E43E51A2445F-
-
-CCpResource GiveMe5/Default.png build/Debug-iphonesimulator/GiveMe5.app/Default.png
-s405743176.506297
-e405743176.510607
-r1
-xCpResource
-xGiveMe5/Default.png
-xbuild/Debug-iphonesimulator/GiveMe5.app/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Debug-iphonesimulator/GiveMe5.app/Default.png2ac68148262fb841^4c1ce149262fb841^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Default.png000000000080d041^514"CpResource GiveMe5/Default.png build/Debug-iphonesimulator/GiveMe5.app/Default.png    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /MyProject/GiveMe5/GiveMe5/Default.png /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app36"1EA12384-8005-426D-8030-DD42B36D8E0F-
-
-CCpResource GiveMe5/Default@2x.png build/Debug-iphonesimulator/GiveMe5.app/Default@2x.png
-s405743176.506889
-e405743176.511522
-r1
-xCpResource
-xGiveMe5/Default@2x.png
-xbuild/Debug-iphonesimulator/GiveMe5.app/Default@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy build/Debug-iphonesimulator/GiveMe5.app/Default@2x.pnge0da8148262fb841^4721e149262fb841^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Default@2x.png000000000080d041^529"CpResource "GiveMe5/Default@2x.png" "build/Debug-iphonesimulator/GiveMe5.app/Default@2x.png"    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/MyProject/GiveMe5/GiveMe5/Default@2x.png" /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app36"CCE846BC-444D-49F1-BE76-CCBA252DAE02-
-
-CGenerateDSYMFile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYM /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5
-s405743176.217641
-e405743176.497949
-r1
-xGenerateDSYMFile
-x/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYM
-x/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Generate /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYMc0cc3748262fb841^2c10e149262fb841^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYM000000000080d041^565"GenerateDSYMFile build/Debug-iphonesimulator/GiveMe5.app.dSYM build/Debug-iphonesimulator/GiveMe5.app/GiveMe5    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5 -o /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app.dSYM36"7A9D84F3-A12D-4EF9-BFCB-B8F9CC926EFB-
-
-CLd /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5 normal i386
-s405743174.875915
-e405743176.210120
-r1
-xLd
-x/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Link /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe5971ce346262fb841^0ccd3548262fb841^---0#0#0#--1036"Ld build/Debug-iphonesimulator/GiveMe5.app/GiveMe5 normal i386    cd /MyProject/GiveMe5    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/MyProject/GiveMe5/build/Debug-iphonesimulator -F/MyProject/GiveMe5/build/Debug-iphonesimulator -filelist /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/Objects-normal/i386/GiveMe5.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/GiveMe536"3E0D7057-3141-43EE-A46A-EC629B0ED485-
-
-CProcessInfoPlistFile /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Info.plist GiveMe5/GiveMe5-Info.plist
-s405743165.755022
-e405743165.799389
-r1
-xProcessInfoPlistFile
-x/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Info.plist
-xGiveMe5/GiveMe5-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process GiveMe5/GiveMe5-Info.plistd09cc13d262fb841^d3a4cc3d262fb841^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/MyProject/GiveMe5/GiveMe5/GiveMe5-Info.plist0000000000000000^590"ProcessInfoPlistFile build/Debug-iphonesimulator/GiveMe5.app/Info.plist GiveMe5/GiveMe5-Info.plist    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility GiveMe5/GiveMe5-Info.plist -genpkginfo /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app/Info.plist36"7CFA4AA0-20E1-4150-92B5-8744F67A7DA2-
-
-CProcessPCH /Users/wangjz/Library/Developer/Xcode/DerivedData/GiveMe5-exvyxjcenopuzielkrbcdeokofuq/Index/PrecompiledHeaders/GiveMe5-Prefix-fashmrexzlxvyxfzszagwughuzfl_ast/GiveMe5-Prefix.pch.pth GiveMe5/GiveMe5-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.pth GiveMe5/GiveMe5-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s405743165.808686
-e405743174.294027
-r1
-xProcessPCH
-x/var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.pth
-xGiveMe5/GiveMe5-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile GiveMe5/GiveMe5-Prefix.pch2e3ccf3d262fb841^65524b46262fb841^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/MyProject/GiveMe5/GiveMe5/GiveMe5-Prefix.pch0000000000000000^3238"ProcessPCH /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.pth GiveMe5/GiveMe5-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /MyProject/GiveMe5    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-generated-files.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-own-target-headers.hmap -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-all-target-headers.hmap -iquote /MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/GiveMe5-project-headers.hmap -I/MyProject/GiveMe5/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources/i386 -I/MyProject/GiveMe5/build/GiveMe5.build/Debug-iphonesimulator/GiveMe5.build/DerivedSources -F/MyProject/GiveMe5/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.dia -c /MyProject/GiveMe5/GiveMe5/GiveMe5-Prefix.pch -o /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/nz/2vxl_rxx76zgq4x3x98h7k740000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GiveMe5-Prefix-cdsacdjynxkmsnczjyyvkwclzyjo/GiveMe5-Prefix.pch.d36"D9451E6E-EEC9-4136-84B1-D983D1D5418F-
-
-CTouch /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app
-s405743177.891108
-e405743177.898441
-r1
-xTouch
-x/MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Touch /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.appfb3ee449262fb841^e90d334b262fb841^---0#0#0#--348"Touch build/Debug-iphonesimulator/GiveMe5.app    cd /MyProject/GiveMe5    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /MyProject/GiveMe5/build/Debug-iphonesimulator/GiveMe5.app36"1B88975F-725C-4D5A-8F62-92A4FC6DB717-
-

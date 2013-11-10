@@ -41,6 +41,7 @@
 		83490E92182F262900E38306 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		83490E9A182F2A3C00E38306 /* bg.Jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.Jpg; sourceTree = "<group>"; };
 		83490E9C182F2ABA00E38306 /* player1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player1.jpg; sourceTree = "<group>"; };
+		83F89675182F31710006CEC7 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 		83490E7C182F262800E38306 /* GiveMe5 */ = {
 			isa = PBXGroup;
 			children = (
+				83F89675182F31710006CEC7 /* constant.h */,
 				83490E85182F262800E38306 /* AppDelegate.h */,
 				83490E86182F262900E38306 /* AppDelegate.m */,
 				83490E8E182F262900E38306 /* ViewController.h */,
@@ -314,6 +316,7 @@
 				83490E98182F262900E38306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
