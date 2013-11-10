@@ -10,7 +10,11 @@
 
 @interface ViewController : UIViewController{
     IBOutlet UIImageView *playerImageView;
+    IBOutlet UILabel *score_label;
 }
 @property(nonatomic,retain) IBOutlet UIImageView *playerImageView;
+@property(nonatomic,retain) IBOutlet UILabel *score_label;
+
+-(IBAction)clickNumber:(UIButton *)sender;
 
 @end

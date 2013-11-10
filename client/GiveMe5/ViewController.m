@@ -13,7 +13,12 @@
 
 @implementation ViewController
 @synthesize playerImageView;
+@synthesize score_label;
 
+-(IBAction)clickNumber:(UIButton *)sender
+{
+    self.score_label.text = [NSString stringWithFormat:@"%d",sender.tag];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
