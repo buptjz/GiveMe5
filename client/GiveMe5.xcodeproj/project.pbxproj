@@ -19,7 +19,14 @@
 		83490E90182F262900E38306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83490E8F182F262900E38306 /* ViewController.m */; };
 		83490E93182F262900E38306 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83490E91182F262900E38306 /* ViewController.xib */; };
 		83490E9B182F2A3C00E38306 /* bg.Jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83490E9A182F2A3C00E38306 /* bg.Jpg */; };
-		83490E9D182F2ABA00E38306 /* player1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83490E9C182F2ABA00E38306 /* player1.jpg */; };
+		83949C3818335B1D00F22E2D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83949C3718335B1D00F22E2D /* QuartzCore.framework */; };
+		83949C3A1833620500F22E2D /* players_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83949C391833620500F22E2D /* players_info.plist */; };
+		83949C411833657600F22E2D /* player1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83949C3B1833657600F22E2D /* player1.jpg */; };
+		83949C421833657600F22E2D /* player2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83949C3C1833657600F22E2D /* player2.jpg */; };
+		83949C431833657600F22E2D /* player3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83949C3D1833657600F22E2D /* player3.jpg */; };
+		83949C441833657600F22E2D /* player4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83949C3E1833657600F22E2D /* player4.jpg */; };
+		83949C451833657600F22E2D /* player5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83949C3F1833657600F22E2D /* player5.jpg */; };
+		83949C461833657600F22E2D /* player6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83949C401833657600F22E2D /* player6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +47,14 @@
 		83490E8F182F262900E38306 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		83490E92182F262900E38306 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		83490E9A182F2A3C00E38306 /* bg.Jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.Jpg; sourceTree = "<group>"; };
-		83490E9C182F2ABA00E38306 /* player1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player1.jpg; sourceTree = "<group>"; };
+		83949C3718335B1D00F22E2D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83949C391833620500F22E2D /* players_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = players_info.plist; sourceTree = "<group>"; };
+		83949C3B1833657600F22E2D /* player1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player1.jpg; sourceTree = "<group>"; };
+		83949C3C1833657600F22E2D /* player2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player2.jpg; sourceTree = "<group>"; };
+		83949C3D1833657600F22E2D /* player3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player3.jpg; sourceTree = "<group>"; };
+		83949C3E1833657600F22E2D /* player4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player4.jpg; sourceTree = "<group>"; };
+		83949C3F1833657600F22E2D /* player5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player5.jpg; sourceTree = "<group>"; };
+		83949C401833657600F22E2D /* player6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = player6.jpg; sourceTree = "<group>"; };
 		83F89675182F31710006CEC7 /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83949C3818335B1D00F22E2D /* QuartzCore.framework in Frameworks */,
 				83490E77182F262800E38306 /* UIKit.framework in Frameworks */,
 				83490E79182F262800E38306 /* Foundation.framework in Frameworks */,
 				83490E7B182F262800E38306 /* CoreGraphics.framework in Frameworks */,
@@ -61,6 +76,7 @@
 		83490E6A182F262800E38306 = {
 			isa = PBXGroup;
 			children = (
+				83949C3718335B1D00F22E2D /* QuartzCore.framework */,
 				83490E99182F2A3C00E38306 /* images */,
 				83490E7C182F262800E38306 /* GiveMe5 */,
 				83490E75182F262800E38306 /* Frameworks */,
@@ -110,6 +126,7 @@
 				83490E88182F262900E38306 /* Default.png */,
 				83490E8A182F262900E38306 /* Default@2x.png */,
 				83490E8C182F262900E38306 /* Default-568h@2x.png */,
+				83949C391833620500F22E2D /* players_info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,7 +135,12 @@
 			isa = PBXGroup;
 			children = (
 				83490E9A182F2A3C00E38306 /* bg.Jpg */,
-				83490E9C182F2ABA00E38306 /* player1.jpg */,
+				83949C3B1833657600F22E2D /* player1.jpg */,
+				83949C3C1833657600F22E2D /* player2.jpg */,
+				83949C3D1833657600F22E2D /* player3.jpg */,
+				83949C3E1833657600F22E2D /* player4.jpg */,
+				83949C3F1833657600F22E2D /* player5.jpg */,
+				83949C401833657600F22E2D /* player6.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -181,7 +203,13 @@
 				83490E8D182F262900E38306 /* Default-568h@2x.png in Resources */,
 				83490E93182F262900E38306 /* ViewController.xib in Resources */,
 				83490E9B182F2A3C00E38306 /* bg.Jpg in Resources */,
-				83490E9D182F2ABA00E38306 /* player1.jpg in Resources */,
+				83949C3A1833620500F22E2D /* players_info.plist in Resources */,
+				83949C411833657600F22E2D /* player1.jpg in Resources */,
+				83949C421833657600F22E2D /* player2.jpg in Resources */,
+				83949C431833657600F22E2D /* player3.jpg in Resources */,
+				83949C441833657600F22E2D /* player4.jpg in Resources */,
+				83949C451833657600F22E2D /* player5.jpg in Resources */,
+				83949C461833657600F22E2D /* player6.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
