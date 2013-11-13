@@ -19,12 +19,17 @@
     IBOutlet UIButton *b0,*b1,*b2,*b3,*b4,*b5,*b6,*b7,*b8,*b9,*b_dot;//0~9 and '.'
     IBOutlet UIButton *b_confirm,*b_clear,*b_nextPlayer;//button 确认、清零、下一位
     int current_score;//评委当前给出的评分
-    int current_player_id;//当前正在比赛的选手
+    NSString *current_player_id;//当前正在比赛的选手
+    NSMutableData *productsListData;//异步请求接受数据
 }
+@property(nonatomic,retain)NSMutableData *productsListData;
+
+@property(nonatomic,retain) NSString *current_player_id;
 @property(nonatomic,retain) IBOutlet UIButton *b0,*b1,*b2,*b3,*b4,*b5,*b6,*b7,*b8,*b9,*b_dot;
 @property(nonatomic,retain) IBOutlet UIButton *b_confirm,*b_clear,*b_nextPlayer;
 @property(nonatomic,retain) IBOutlet UIView *status_view;
-@property(nonatomic,retain) IBOutlet UIImageView *playerImageView,*nameImageView;
+@property(nonatomic,retain) IBOutlet UIImageView *playerImageView;
+@property(nonatomic,retain) IBOutlet UIImageView *nameImageView;
 @property(nonatomic,retain) IBOutlet UILabel *score_label,*player_name_label,*message_label;
 @property(nonatomic,retain) NSDictionary *local_players_dic;
 /*点击0~9分数按钮，sender代表按钮的tag*/
@@ -37,6 +42,6 @@
 -(IBAction)send_score;
 
 /**同步get请求**/
--(void)sync_get_request:(NSString *)stringurl;
+//-(void)sync_get_request:(NSString *)stringurl;
 
 @end

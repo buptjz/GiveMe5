@@ -461,7 +461,6 @@
 						<string key="NSFrame">{{710, 571}, {160, 118}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -483,21 +482,6 @@
 						</object>
 						<reference key="IBUIFontDescription" ref="1056927912"/>
 						<reference key="IBUIFont" ref="73752820"/>
-					</object>
-					<object class="IBUIImageView" id="800790308">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{73, 62}, {173, 222}}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="7857457"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">player6.png</string>
-						</object>
 					</object>
 					<object class="IBUILabel" id="584497624">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -586,7 +570,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<string key="IBUIText">暂停</string>
+								<string key="IBUIText">评分成功</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -654,7 +638,7 @@
 						<string key="NSFrame">{{45, 34}, {230, 281}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="800790308"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -721,14 +705,6 @@
 						<reference key="destination" ref="766721923"/>
 					</object>
 					<int key="connectionID">3</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">playerImageView</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="800790308"/>
-					</object>
-					<int key="connectionID">395</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -881,6 +857,14 @@
 						<reference key="destination" ref="7857457"/>
 					</object>
 					<int key="connectionID">442</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">playerImageView</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="423556517"/>
+					</object>
+					<int key="connectionID">443</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1048,7 +1032,6 @@
 							<reference ref="637941078"/>
 							<reference ref="162367857"/>
 							<reference ref="1003558933"/>
-							<reference ref="800790308"/>
 							<reference ref="584497624"/>
 							<reference ref="242746795"/>
 							<reference ref="333196899"/>
@@ -1141,12 +1124,6 @@
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">Button确认</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">207</int>
-						<reference key="object" ref="800790308"/>
-						<array class="NSMutableArray" key="children"/>
-						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">257</int>
@@ -1243,7 +1220,6 @@
 				<string key="184.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="1" key="184.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="207.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="257.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="324.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1273,7 +1249,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">442</int>
+			<int key="maxID">443</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1431,7 +1407,6 @@
 			<string key="d触控点.png">{116, 116}</string>
 			<string key="d触控确认.png">{241, 241}</string>
 			<string key="name_image_1.png">{272, 127}</string>
-			<string key="player6.png">{16, 16}</string>
 			<string key="player_image_1.png">{173, 222}</string>
 			<string key="下一位选手.png">{160, 118}</string>
 			<string key="下方分割栏.png">{487, 454}</string>

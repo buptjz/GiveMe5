@@ -18,6 +18,8 @@
 #define SENDSCORE @"display/send_score?"
 #define GETCURRENTPLAYER @"display/get_current_player?"
 
+#define SUCEESRATE @"succesrate"
+#define CURRENTPLAYERPREFIX @"currentplayerid"
 //http://127.0.0.1:8000/display/send_score?score=90&name=wjz
 //http://127.0.0.1:8000/display/get_current_player?jid=2
 
