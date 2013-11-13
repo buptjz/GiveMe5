@@ -9,7 +9,9 @@
 		<key>name</key>
 		<string>爱丽丝</string>
 		<key>image</key>
-		<string>player1</string>
+		<string>player_image_1</string>
+		<key>name_image</key>
+		<string>name_image_1</string>
 	</dict>
 	<key>2</key>
 	<dict>
@@ -18,7 +20,9 @@
 		<key>name</key>
 		<string>鲍伯</string>
 		<key>image</key>
-		<string>player2</string>
+		<string>player_image_2</string>
+		<key>name_image</key>
+		<string>name_image_2</string>
 	</dict>
 	<key>3</key>
 	<dict>
@@ -27,7 +31,9 @@
 		<key>name</key>
 		<string>查尔斯</string>
 		<key>image</key>
-		<string>player3</string>
+		<string>player_image_3</string>
+		<key>name_image</key>
+		<string>name_image_3</string>
 	</dict>
 	<key>4</key>
 	<dict>
@@ -36,7 +42,9 @@
 		<key>name</key>
 		<string>戴伦</string>
 		<key>image</key>
-		<string>player4</string>
+		<string>player_image_4</string>
+		<key>name_image</key>
+		<string>name_image_4</string>
 	</dict>
 	<key>5</key>
 	<dict>
@@ -45,16 +53,9 @@
 		<key>name</key>
 		<string>鄂尔多斯</string>
 		<key>image</key>
-		<string>player5</string>
-	</dict>
-	<key>6</key>
-	<dict>
-		<key>id</key>
-		<string>6</string>
-		<key>name</key>
-		<string>弗兰克</string>
-		<key>image</key>
-		<string>player6</string>
+		<string>player_image_5</string>
+		<key>name_image</key>
+		<string>name_image_5</string>
 	</dict>
 </dict>
 </plist>

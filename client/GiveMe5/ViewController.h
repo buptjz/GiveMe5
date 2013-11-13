@@ -10,16 +10,22 @@
 
 @interface ViewController : UIViewController{
     NSDictionary *local_players_dic;
+    IBOutlet UIImageView *nameImageView;//选手名字的图片
     IBOutlet UIImageView *playerImageView;//选手的图片
     IBOutlet UIView *status_view;//状态栏视图
-    IBOutlet UILabel *player_name_label;
+    IBOutlet UILabel *player_name_label;//选手名字
     IBOutlet UILabel *score_label;//显示在右上角的分数
+    IBOutlet UILabel *message_label;//显示在右上角的分数
+    IBOutlet UIButton *b0,*b1,*b2,*b3,*b4,*b5,*b6,*b7,*b8,*b9,*b_dot;//0~9 and '.'
+    IBOutlet UIButton *b_confirm,*b_clear,*b_nextPlayer;//button 确认、清零、下一位
     int current_score;//评委当前给出的评分
     int current_player_id;//当前正在比赛的选手
 }
+@property(nonatomic,retain) IBOutlet UIButton *b0,*b1,*b2,*b3,*b4,*b5,*b6,*b7,*b8,*b9,*b_dot;
+@property(nonatomic,retain) IBOutlet UIButton *b_confirm,*b_clear,*b_nextPlayer;
 @property(nonatomic,retain) IBOutlet UIView *status_view;
-@property(nonatomic,retain) IBOutlet UIImageView *playerImageView;
-@property(nonatomic,retain) IBOutlet UILabel *score_label,*player_name_label;
+@property(nonatomic,retain) IBOutlet UIImageView *playerImageView,*nameImageView;
+@property(nonatomic,retain) IBOutlet UILabel *score_label,*player_name_label,*message_label;
 @property(nonatomic,retain) NSDictionary *local_players_dic;
 /*点击0~9分数按钮，sender代表按钮的tag*/
 -(IBAction)clickNumber:(UIButton *)sender;
