@@ -27,15 +27,12 @@
 
 /*异步请求接口*/
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-    if (self.productsListData == nil) {
-        NSMutableData *tempData = [[NSMutableData alloc]init];
-        self.productsListData = tempData;
-        [tempData release];
-    }
+    self.productsListData = [NSMutableData data];
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    [self.productsListData appendData:data];
+    [productsListData appendData:data];
+
 }
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
@@ -53,28 +50,30 @@
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    
+    [connection release];
+    
     NSString *ret_str = [[NSString alloc]initWithData:self.productsListData encoding:NSUTF8StringEncoding];
-
-    self.productsListData = nil;
     NSLog(@"data is :%@",ret_str);
     
     //处理接收到当前选手编号 currentplayerid:1
     if([ret_str hasPrefix:CURRENTPLAYERPREFIX]){
         self.current_player_id = [ret_str componentsSeparatedByString:@":"][1];
         [self set_player_info:current_player_id];
-        [self show_status:@"【温馨提示】获取当前选手成功！"];
+        //[self show_status:@"【温馨提示】获取当前选手成功！"];
         [self clear_score];//获取一个新的选手之后，得分清零
     }
     //处理评分成功
     else if([ret_str hasPrefix:SUCEESRATE]){
-        [self show_status:@"【温馨提示】评分成功！"];
+        //[self show_status:@"【温馨提示】评分成功！"];
     }
     //处理其他情况
     else{
         NSLog(@"%@",ret_str);
         [self show_status:@"【温馨提示】网络异常，请于工作人员联系"];
     }
-    [connection release];
+  
+    [ret_str release];
     
 }
 /*使用Reachability判断是否有网络*/
@@ -111,42 +110,11 @@
                                             timeoutInterval:7];//设置7秒的网络超时时限
     NSURLConnection *theConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
     if (theConnection) {
+
+    }else{
+    
     }
 }
-
-///**同步get请求**/
-//-(void)sync_get_request:(NSString *)stringurl
-//{
-////    //如果网络有问题，不发送同步请求
-////    if (![self is_wifi_work]) {
-////        [self show_status:@"【温馨提示】网络未连接，请联系工作人员！"];
-////        return;
-////    }
-//    
-//    //第一步，创建URL
-//    NSURL *url = [NSURL URLWithString:stringurl];
-//    //第二步，通过URL创建网络请求
-//    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url
-//                                                 cachePolicy:NSURLRequestUseProtocolCachePolicy
-//                                             timeoutInterval:10];
-//    //第三步，连接服务器,发送同步请求
-//    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-//    NSString *ret_str = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];
-//    NSLog(@"data is :%@",ret_str);
-//    
-//    //处理接收到当前选手编号 currentplayerid:1
-//    if([ret_str hasPrefix:CURRENTPLAYERPREFIX]){
-//        self.current_player_id = [ret_str componentsSeparatedByString:@":"][1];
-//        [self set_player_info:current_player_id];
-//    }
-//    //处理评分成功
-//    else if([ret_str hasPrefix:SUCEESRATE]){
-//        [self show_status:@"【温馨提示】评分成功！"];
-//    }
-//    else{
-//        [self show_status:@"【温馨提示】网络异常，请于工作人员联系"];
-//    }
-//}
 
 #pragma mark --
 #pragma mark 选手
@@ -172,6 +140,7 @@
 
 /*获取当前选手的id，需要处理返回值,返回“currentplayerid:1”这类的*/
 -(IBAction)get_current_player{
+    NSLog(@"【按键】下一位选手");
     //http://127.0.0.1:8000/display/get_current_player?jid=2
     NSString *url = [NSString stringWithFormat:@"%@%@jid=%@",IPADD,GETCURRENTPLAYER,MYJID];
     [self unsync_get_request:url];
@@ -188,6 +157,7 @@
 
 /*发送得分，返回值'true' 或者 'false'*/
 -(IBAction)send_score{
+    NSLog(@"【按键】确认");
     //http://127.0.0.1:8000/display/send_score?jid=1&pid=2&score=90
     float score = my_current_score.left_digit+my_current_score.right_digit/10.0;
     NSString *url = [NSString stringWithFormat:@"%@%@jid=%@&pid=%@&score=%.1f",
@@ -205,12 +175,14 @@
 -(IBAction)clickNumber:(UIButton *)sender
 {
     if (sender.tag == 11) {//点
-        NSLog(@".");
+        NSLog(@"【按键】.");
         my_current_score.has_touched = YES;
     }else if (sender.tag == 31){//清零
+        NSLog(@"【按键】清零");
         [self clear_score];
         
     }else{//数字
+        NSLog(@"【按键】%d",sender.tag);
         //如果左侧还没有数字，那么设置该数字在左
         if (!my_current_score.has_touched) {
             my_current_score.left_digit = sender.tag;
@@ -253,8 +225,10 @@
     [super viewDidLoad];
     
     current_player_id = [[NSString alloc]init];//当前id
-    [self clear_score];//初始化socre
     self.current_player_id = @"1";//defalut value of 当前选手id
+    
+    [self clear_score];//初始化socre
+
     //读取本地保存的选手图片
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"players_info" ofType:@"plist"];
     local_players_dic= [[NSDictionary alloc] initWithContentsOfFile:plistPath];

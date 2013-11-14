@@ -10,10 +10,10 @@
 #define GiveMe5_Header_h
 
 //每台iPad机器上得JID唯一
-#define MYJID @"1"
+#define MYJID @"2"
 
 //ip地址需要替换，端口不需要替换
-#define IPADD @"http://10.105.55.149:8000/"
+#define IPADD @"http://10.105.55.225:8000/"
 
 #define SENDSCORE @"display/send_score?"
 #define GETCURRENTPLAYER @"display/get_current_player?"
