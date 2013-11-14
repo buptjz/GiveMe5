@@ -123,7 +123,12 @@
 /*异步get请求*/
 -(void)unsync_get_request:(NSString *)stringurl
 {
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:stringurl]];
+    NSLog(@"【开始 网络 请求】%@",stringurl);
+    
+    //NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:stringurl]];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:stringurl]
+                                                cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                            timeoutInterval:7];//设置7秒的网络超时时限
     NSURLConnection *theConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
     if (theConnection) {
     }
