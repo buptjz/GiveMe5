@@ -60,12 +60,12 @@
     if([ret_str hasPrefix:CURRENTPLAYERPREFIX]){
         self.current_player_id = [ret_str componentsSeparatedByString:@":"][1];
         [self set_player_info:current_player_id];
-        //[self show_status:@"【温馨提示】获取当前选手成功！"];
+        [self show_status:@"【温馨提示】获取当前选手成功！"];
         [self clear_score];//获取一个新的选手之后，得分清零
     }
     //处理评分成功
     else if([ret_str hasPrefix:SUCEESRATE]){
-        //[self show_status:@"【温馨提示】评分成功！"];
+        [self show_status:@"【温馨提示】评分成功！"];
     }
     //处理其他情况
     else{
