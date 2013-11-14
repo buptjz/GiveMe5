@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+struct player_score{
+    int left_digit;
+    int right_digit;
+    bool has_touched;
+};
+
 @interface ViewController : UIViewController{
+    struct player_score my_current_score;
     NSDictionary *local_players_dic;
     IBOutlet UIImageView *nameImageView;//选手名字的图片
     IBOutlet UIImageView *playerImageView;//选手的图片
@@ -18,7 +25,7 @@
     IBOutlet UILabel *message_label;//显示在右上角的分数
     IBOutlet UIButton *b0,*b1,*b2,*b3,*b4,*b5,*b6,*b7,*b8,*b9,*b_dot;//0~9 and '.'
     IBOutlet UIButton *b_confirm,*b_clear,*b_nextPlayer;//button 确认、清零、下一位
-    int current_score;//评委当前给出的评分
+
     NSString *current_player_id;//当前正在比赛的选手
     NSMutableData *productsListData;//异步请求接受数据
 }

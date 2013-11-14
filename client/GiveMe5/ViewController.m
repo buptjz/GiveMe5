@@ -21,8 +21,10 @@
 @synthesize b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,b_dot;
 @synthesize b_confirm,b_clear,b_nextPlayer;
 @synthesize productsListData;
+
 #pragma mark --
-#pragma mark NSRequestDelegateMethods
+#pragma mark 网络
+
 /*异步请求接口*/
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     if (self.productsListData == nil) {
@@ -61,6 +63,7 @@
         self.current_player_id = [ret_str componentsSeparatedByString:@":"][1];
         [self set_player_info:current_player_id];
         [self show_status:@"【温馨提示】获取当前选手成功！"];
+        [self clear_score];//获取一个新的选手之后，得分清零
     }
     //处理评分成功
     else if([ret_str hasPrefix:SUCEESRATE]){
@@ -94,31 +97,8 @@
     }
 }
 
-/*更新得分*/
--(void)update_current_score:(int)score{
-    current_score = score;
-    self.score_label.text = [NSString stringWithFormat:@"%d",current_score];
-    
-}
-/*设置界面，包括选手名字和图片*/
--(void)set_player_info:(NSString *)player_id{
-    NSDictionary *player_dic = [local_players_dic objectForKey:player_id];
 
-    //修改名字图片
-    NSString *name_img = [player_dic objectForKey:@"name_image"];
-    NSString *name_img_file = [[NSBundle mainBundle] pathForResource:name_img ofType: @"png"];
-    [nameImageView setImage:[UIImage imageWithContentsOfFile:name_img_file]];
-    
-    //修改选手图片
-    NSString *play_img = [player_dic objectForKey:@"image"];
-    NSString *img_file = [[NSBundle mainBundle] pathForResource:play_img ofType: @"png"];
-    [playerImageView setImage:[UIImage imageWithContentsOfFile:img_file]];
 
-//    //修改名字
-//    NSString *play_name = [player_dic objectForKey:@"name"];
-//    [player_name_label setText:play_name];
-    
-}
 
 /*异步get请求*/
 -(void)unsync_get_request:(NSString *)stringurl
@@ -168,13 +148,28 @@
 //    }
 //}
 
-/*发送得分，返回值'true' 或者 'false'*/
--(IBAction)send_score{
-    //http://127.0.0.1:8000/display/send_score?jid=1&pid=2&score=90
-    NSString *url = [NSString stringWithFormat:@"%@%@jid=%@&pid=%@&score=%d",
-                     IPADD,SENDSCORE,MYJID,current_player_id,current_score];
-    [self unsync_get_request:url];
+#pragma mark --
+#pragma mark 选手
+/*设置界面，包括选手名字和图片*/
+-(void)set_player_info:(NSString *)player_id{
+    NSDictionary *player_dic = [local_players_dic objectForKey:player_id];
+    
+    //修改名字图片
+    NSString *name_img = [player_dic objectForKey:@"name_image"];
+    NSString *name_img_file = [[NSBundle mainBundle] pathForResource:name_img ofType: @"png"];
+    [nameImageView setImage:[UIImage imageWithContentsOfFile:name_img_file]];
+    
+    //修改选手图片
+    NSString *play_img = [player_dic objectForKey:@"image"];
+    NSString *img_file = [[NSBundle mainBundle] pathForResource:play_img ofType: @"png"];
+    [playerImageView setImage:[UIImage imageWithContentsOfFile:img_file]];
+    
+    //    //修改名字
+    //    NSString *play_name = [player_dic objectForKey:@"name"];
+    //    [player_name_label setText:play_name];
+    
 }
+
 /*获取当前选手的id，需要处理返回值,返回“currentplayerid:1”这类的*/
 -(IBAction)get_current_player{
     //http://127.0.0.1:8000/display/get_current_player?jid=2
@@ -182,20 +177,57 @@
     [self unsync_get_request:url];
 }
 
+#pragma mark --
+#pragma mark 得分
+
+/*更新显示得分*/
+-(void)update_score_display:(struct player_score)score{
+    float display_score = score.left_digit+score.right_digit/10.0;
+    self.score_label.text = [NSString stringWithFormat:@"%.1f",display_score];
+}
+
+/*发送得分，返回值'true' 或者 'false'*/
+-(IBAction)send_score{
+    //http://127.0.0.1:8000/display/send_score?jid=1&pid=2&score=90
+    float score = my_current_score.left_digit+my_current_score.right_digit/10.0;
+    NSString *url = [NSString stringWithFormat:@"%@%@jid=%@&pid=%@&score=%.1f",
+                     IPADD,SENDSCORE,MYJID,current_player_id,score];
+    [self unsync_get_request:url];
+}
+/*得分清零*/
+-(void)clear_score{
+    my_current_score.left_digit = 0;
+    my_current_score.right_digit = 0;
+    my_current_score.has_touched = NO;
+    [self update_score_display:my_current_score];
+}
 /*点击0~9得分按钮，sender代表按钮的tag*/
 -(IBAction)clickNumber:(UIButton *)sender
 {
     if (sender.tag == 11) {//点
         NSLog(@".");
+        my_current_score.has_touched = YES;
     }else if (sender.tag == 31){//清零
-        [self update_current_score:0];
+        [self clear_score];
+        
     }else{//数字
-        [self update_current_score:sender.tag];
+        //如果左侧还没有数字，那么设置该数字在左
+        if (!my_current_score.has_touched) {
+            my_current_score.left_digit = sender.tag;
+            my_current_score.right_digit = 0;
+            my_current_score.has_touched = YES;
+        }else{//如果左侧有数字了，那么设置该数字在右上
+            my_current_score.right_digit = sender.tag;
+        }
+        [self update_score_display:my_current_score];
     }
 
 }
 
-/*显示发送成功，然后隐藏掉*/
+#pragma mark --
+#pragma mark 界面状态
+
+/*状态栏提示，渐现渐隐，然后隐藏掉*/
 -(void)show_status:(NSString *)message{
     [message_label setText:message];
     //
@@ -205,7 +237,7 @@
                          self.status_view.alpha = 1.0;
                      }
                      completion:^(BOOL finished) {
-                         [UIView animateWithDuration:1.2 delay:0.3
+                         [UIView animateWithDuration:1.2 delay:1.0
                                              options:UIViewAnimationOptionCurveEaseInOut
                                           animations:^ {
                                               self.status_view.alpha = 0.0;
@@ -221,7 +253,7 @@
     [super viewDidLoad];
     
     current_player_id = [[NSString alloc]init];//当前id
-    current_score = 9;//defalut value of 当前得分
+    [self clear_score];//初始化socre
     self.current_player_id = @"1";//defalut value of 当前选手id
     //读取本地保存的选手图片
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"players_info" ofType:@"plist"];
