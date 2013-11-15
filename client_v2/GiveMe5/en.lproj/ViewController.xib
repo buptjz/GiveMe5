@@ -103,7 +103,7 @@
 						<string key="NSFrame">{{658, 280}, {357, 357}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="395091550"/>
+						<reference key="NSNextKeyView" ref="518790551"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -112,7 +112,7 @@
 							<string key="NSResourceName">触控确认背景.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="395091550">
+					<object class="IBUIImageView" id="518790551">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{833, 394}, {143, 184}}</string>
@@ -829,7 +829,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">huojuImageView</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="395091550"/>
+						<reference key="destination" ref="518790551"/>
 					</object>
 					<int key="connectionID">447</int>
 				</object>
@@ -1003,7 +1003,7 @@
 							<reference ref="637941078"/>
 							<reference ref="1003558933"/>
 							<reference ref="574559541"/>
-							<reference ref="395091550"/>
+							<reference ref="518790551"/>
 							<reference ref="162367857"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -1153,7 +1153,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">446</int>
-						<reference key="object" ref="395091550"/>
+						<reference key="object" ref="518790551"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</array>
