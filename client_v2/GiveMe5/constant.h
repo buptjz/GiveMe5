@@ -9,11 +9,18 @@
 #ifndef GiveMe5_Header_h
 #define GiveMe5_Header_h
 
-//每台iPad机器上得JID唯一
-#define MYJID @"2"
+//每台iPad机器上JID唯一
+//1 小白
+//2 小红
+//3 老pad
+//4 暖同学
+//5 新伙伴
+#define MYJID @"3"
 
+//使用哪一个配置文件？
+#define PLAY_CONFIG @"players_info_final"
 //ip地址需要替换，端口不需要替换
-#define IPADD @"http://10.105.55.225:8000/"
+#define IPADD @"http://192.168.1.100:8000/"
 
 #define SENDSCORE @"display/send_score?"
 #define GETCURRENTPLAYER @"display/get_current_player?"

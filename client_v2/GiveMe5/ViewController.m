@@ -291,12 +291,12 @@
     [super viewDidLoad];
     
     current_player_id = [[NSString alloc]init];//当前id
-    self.current_player_id = @"1";//defalut value of 当前选手id
+    self.current_player_id = @"1_1";//defalut value of 当前选手id[重要]
     
     [self clear_score];//初始化socre
 
     //读取本地保存的选手图片
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"players_info" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:PLAY_CONFIG ofType:@"plist"];
     local_players_dic= [[NSDictionary alloc] initWithContentsOfFile:plistPath];
     [status_view setAlpha:0];//status_view一开始并不显示
 }
