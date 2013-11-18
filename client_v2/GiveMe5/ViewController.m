@@ -75,7 +75,7 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"%@",error);
-    [self show_status:@"【温馨提示】网络连接异常，请于工作人员联系"];
+    [self show_status:@"【温馨提示】网络连接异常，请与工作人员联系"];
     [connection release];
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
@@ -96,7 +96,7 @@
             //如果获取到下一位选手，那么提示、清零、解锁确认键
             self.current_player_id = ret_id;
             [self set_player_info:current_player_id];
-            [self show_status:@"【温馨提示】获取当前选手成功！"];
+            //[self show_status:@"【温馨提示】获取当前选手成功！"];
             [self clear_score];//获取一个新的选手之后，得分清零
             [self unlock_confirm_button];
         }
@@ -112,7 +112,7 @@
     /*处理其他情况*/
     else{
         NSLog(@"%@",ret_str);
-        [self show_status:@"【温馨提示】网络异常，请于工作人员联系"];
+        [self show_status:@"【温馨提示】网络异常，请与工作人员联系"];
     }
   
     [ret_str release];
@@ -194,24 +194,33 @@
 
 /*更新显示得分*/
 -(void)update_score_display:(struct player_score)score{
-    float display_score = score.left_digit+score.right_digit/10.0;
-    self.score_label.text = [NSString stringWithFormat:@"%.1f",display_score];
+    if (score.cur_score >= 10.0) {
+        self.score_label.text = [NSString stringWithFormat:@"10"];
+        return;
+    }
+    if ((int)(score.cur_score * 10) % 10 > 0) {
+        self.score_label.text = [NSString stringWithFormat:@"%.1f",score.cur_score];
+    }
+    else{
+        self.score_label.text = [NSString stringWithFormat:@"%.0f",score.cur_score];
+    }
+    
 }
 
 /*发送得分，返回值'true' 或者 'false'*/
 -(IBAction)send_score{
     NSLog(@"【按键】确认");
     //http://127.0.0.1:8000/display/send_score?jid=1&pid=2&score=90
-    float score = my_current_score.left_digit+my_current_score.right_digit/10.0;
+    float score = my_current_score.cur_score;
     NSString *url = [NSString stringWithFormat:@"%@%@jid=%@&pid=%@&score=%.1f",
                      IPADD,SENDSCORE,MYJID,current_player_id,score];
     [self unsync_get_request:url];
 }
 /*得分清零*/
 -(void)clear_score{
-    my_current_score.left_digit = 0;
-    my_current_score.right_digit = 0;
+    my_current_score.cur_score = 0;
     my_current_score.has_touched = NO;
+    
     [self update_score_display:my_current_score];
 }
 /*点击0~9得分按钮，sender代表按钮的tag*/
@@ -226,13 +235,26 @@
         
     }else{//数字
         NSLog(@"【按键】%d",sender.tag);
-        //如果左侧还没有数字，那么设置该数字在左
+        //还没有按过.
         if (!my_current_score.has_touched) {
-            my_current_score.left_digit = sender.tag;
-            my_current_score.right_digit = 0;
-            my_current_score.has_touched = YES;
-        }else{//如果左侧有数字了，那么设置该数字在右上
-            my_current_score.right_digit = sender.tag;
+            //如果现在是1，按了0
+            if (my_current_score.cur_score == 1.0 && sender.tag==0) {
+                my_current_score.cur_score = 10.0;
+            }else{
+                my_current_score.cur_score = (float)sender.tag;
+            }
+        }else{//如果按过.
+            //如果当前是10，不改变
+            if(my_current_score.cur_score == 10.0) {
+                return;
+            }
+            //如果小数点侯一位大于0，不改变
+            if ((int)(my_current_score.cur_score * 10) % 10 > 0) {
+                return;
+            }
+            my_current_score.cur_score = (int)(my_current_score.cur_score*10) / 10 + sender.tag / 10.0;
+
+
         }
         [self update_score_display:my_current_score];
     }

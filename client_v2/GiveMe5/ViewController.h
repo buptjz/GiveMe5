@@ -11,6 +11,7 @@
 struct player_score{
     int left_digit;
     int right_digit;
+    float cur_score;
     bool has_touched;
 };
 
