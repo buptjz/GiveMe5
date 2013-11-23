@@ -10,12 +10,12 @@
 #define GiveMe5_Header_h
 
 //每台iPad机器上JID唯一
-//1 小白
-//2 小红
+//1 小白,PhonexZhao
+//2 小红,jizhe
 //3 老pad
-//4 暖同学
-//5 新伙伴
-#define MYJID @"3"
+//4 暖同学，川川
+//5 新伙伴,Yuji
+#define MYJID @"2"
 
 //使用哪一个配置文件？
 #define PLAY_CONFIG @"players_info_final"

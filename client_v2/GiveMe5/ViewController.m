@@ -291,8 +291,8 @@
     [super viewDidLoad];
     
     current_player_id = [[NSString alloc]init];//当前id
-    self.current_player_id = @"1_1";//defalut value of 当前选手id[重要]
-    
+    self.current_player_id = @"0_0";//defalut value of 当前选手id[重要]
+    [self lock_confirm_button];
     [self clear_score];//初始化socre
 
     //读取本地保存的选手图片

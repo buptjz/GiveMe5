@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>0_0</key>
+	<dict>
+		<key>id</key>
+		<string>0_0</string>
+		<key>name</key>
+		<string>None</string>
+		<key>image</key>
+		<string>0_None</string>
+		<key>name_image</key>
+		<string>0name_image_1</string>
+	</dict>
 	<key>1_1</key>
 	<dict>
 		<key>id</key>
@@ -139,9 +150,9 @@
 		<key>id</key>
 		<string>2_3</string>
 		<key>name</key>
-		<string>03陈昭远</string>
+		<string>03郅立鹏</string>
 		<key>image</key>
-		<string>03陈昭远</string>
+		<string>03郅立鹏</string>
 		<key>name_image</key>
 		<string>2name_image_3</string>
 	</dict>

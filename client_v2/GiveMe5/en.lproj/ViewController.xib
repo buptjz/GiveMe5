@@ -64,7 +64,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">01胡朝阳.png</string>
+							<string key="NSResourceName">0_None.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="7857457">
@@ -79,7 +79,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">name_image_1.png</string>
+							<string key="NSResourceName">0name_image_1.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="722068442">
@@ -1372,7 +1372,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="01胡朝阳.png">{275, 269}</string>
+			<string key="0_None.png">{275, 269}</string>
+			<string key="0name_image_1.png">{472, 71}</string>
 			<string key="bg.png">{1024, 768}</string>
 			<string key="d下一位选手.png">{355, 164}</string>
 			<string key="d触控0.png">{137, 137}</string>
@@ -1388,7 +1389,6 @@
 			<string key="d触控清零.png">{137, 137}</string>
 			<string key="d触控点.png">{137, 137}</string>
 			<string key="d触控确认.png">{357, 357}</string>
-			<string key="name_image_1.png">{472, 71}</string>
 			<string key="下一位选手.png">{355, 164}</string>
 			<string key="得分.png">{519, 255}</string>
 			<string key="火炬.png">{197, 250}</string>
